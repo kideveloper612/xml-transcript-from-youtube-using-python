@@ -6,8 +6,6 @@ from pytube import YouTube
 import xml.dom.minidom
 from lxml import etree
 
-
-
 source = YouTube('https://youtu.be/2ejMpDd3PL0')
 
 en_caption = source.captions.get_by_language_code('en')
