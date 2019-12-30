@@ -13,7 +13,6 @@ en_caption = source.captions.get_by_language_code('en')
 en_caption_convert_to_xml = (en_caption.xml_captions)
 print(en_caption_convert_to_xml)
 pretty_xml_as_string = etree.tostring(en_caption_convert_to_xml, encoding='UTF-8', xml_declaration=True, pretty_print=True)
-
 pretty_xml_as_string = xml.dom.minidom.parse(en_caption_convert_to_xml).toprettyxml()
 
 text_file = open("test.xml", "w")
